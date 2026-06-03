@@ -1,0 +1,14 @@
+[package]
+name = "raweb"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+socket2 = { version = "0.5", features = ["all"] }
+httparse = "1.8"
+num_cpus = "1.17.0"
+nix = { version = "0.30", features = ["signal", "process", "zerocopy"] }
+core_affinity = "0.8"
+libc = "0.2"
+jemallocator = "0.5"
